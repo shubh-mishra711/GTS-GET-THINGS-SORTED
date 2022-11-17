@@ -1,0 +1,14 @@
+
+    .navbar {
+        background-image: linear-gradient(to right top,
+            #c2b8dd,
+            #b5b7d8,
+            #bec9df,
+            #b79fc5,
+            #aecbd8);
+        /* background-color: rgb(231, 136, 191); */
+  
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }

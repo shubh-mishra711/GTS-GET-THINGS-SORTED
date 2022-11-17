@@ -1,0 +1,70 @@
+.team {
+
+    padding: 11px 10px;
+    height: 600px;
+  }
+  .team h2 {
+    text-align: center;
+    color: rgb(24, 17, 122);
+    font-family: cursive, bold, Arial, Helvetica, sans-serif;
+    margin-bottom: 48px;
+    margin-left: 0px;
+  }
+  .team .team-members {
+   
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20%;
+  }
+
+  
+  .team .team-members .member img {
+    height: px;
+    box-shadow: 10px 10px 20px rgb(16, 163, 173);
+  
+    width: 280px;
+    border-radius: 2px;
+  }
+  .team .team-members .member .about-member {
+    background-color: white;
+    width: 230px;
+    height: 205px;
+    position: relative;
+    left: 10px;
+    bottom: 48px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px #123d53;
+    padding: 12px;
+    text-align: center;
+    
+  }
+  .team .team-members .member .about-member {
+    animation: bounce2 5s linear;
+  }
+  
+  @keyframes bounce2 {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+
+    60% {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+}
+  .team .team-members .member .about-member p {
+    font-size: smaller;
+    font-weight: 500;
+  }
+  .team .team-members .member .about-member p:first-of-type {
+    color: rgb(20, 67, 220);
+  }
+  .team p {
+    text-align: center;
+  }
+  .team p a {
+    color: rgb(21, 86, 182);
+  }
+  

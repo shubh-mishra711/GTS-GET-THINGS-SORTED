@@ -1,0 +1,892 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <title>GetThingsSorted</title>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="./css/feedback.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/services.css" />
+  <link rel="stylesheet" href="./css/gallery.css" />
+  <link rel="stylesheet" href="./css/nav.css" />
+  <link rel="stylesheet" href="./css/team.css" />
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fruktur&family=Marck+Script&family=Parisienne&family=Playball&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fruktur&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fruktur&family=Parisienne&family=Playball&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fruktur&family=Parisienne&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <style>
+    body {
+
+      background-color: white;
+    }
+
+    .bd-placeholder-img {
+      animation: bounce 3s linear;
+      box-shadow: 10px 10px 10px #85b6e4;
+      animation-iteration-count: infinite;
+    }
+
+
+    @keyframes bounce {
+      0% {
+        transform: scale(0.1);
+        opacity: 0;
+      }
+
+      60% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .extra {
+      animation: bounce3 3s linear;
+
+      animation-iteration-count: infinite;
+    }
+
+
+    @keyframes bounce3 {
+      0% {
+        transform: translateY(0px) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(20px) rotate(5deg);
+      }
+    }
+
+    @media (max-width: 789px) {
+       
+
+     
+
+      .wedding {
+        width: 100%;
+      }
+
+      .col-md-4 order-md-7 {
+        width: 100%;
+      }
+
+      .container my-4 {
+        width: 100%;
+      }
+
+      .card-text mb-auto {
+        width: fit-content;
+      }
+      
+    .feedimage {
+      width: 100%;
+      
+    }
+    .extra{
+      width: 0%;
+      
+    }
+    .feedback{
+      width: 0px;
+      height: 0px;
+    }
+
+    }
+
+    
+    @media (max-width: 1100px) {
+      .feedimage {
+      width: 0%;
+      
+    }
+    .extra{
+      width: 0%;
+      
+    }
+    .feedback{
+      width: 0px;
+      height: 0px;
+      position:absolute;
+    }
+    }
+
+    .container-fluid {
+      height: 35px;
+    }
+
+
+
+
+
+    .extra {
+      width: 60%;
+      float: left;
+    }
+
+
+
+ 
+    
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-family: 'Dancing Script', cursive;
+      font-family: 'Fruktur', cursive;
+      font-family: 'Marck Script', cursive;
+      font-family: 'Parisienne', cursive;
+      font-family: 'Playball', cursive;">ঔৣ°GTS°ঔৣ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#teamsection">TEAM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Services">SERVICES</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              RECENT EVENTS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">BANGALORE (★★★★)</a></li>
+              <li><a class="dropdown-item" href="#">PUNE (★★★★★)</a></li>
+              <li><a class="dropdown-item" href="#">NAINITAL (★★★★)</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#swiper">WATCH OUR GALLARY</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <form class="d-flex">
+          <input class="form-control mb-4" style="width: 200px; margin-right: 25px;margin-top: 21px;" type="search" placeholder="Search" aria-label="Search" width="50%" height="40%">
+          <button type="button" class="btn btn-primary"  style="width: 120px;  height: 45px;  margin-right: 0px;margin-top: 19px;margin-bottom: 20px;"><a class="dropdown-item" href="./pages/login.html">Login</a></button>
+          <button type="button" class="btn btn-success"  style="width: 120px;  height: 45px;  margin-right: 0px;margin-top: 19px;margin-bottom: 20px;"><a class="dropdown-item" href="./pages/login.html">SignUp</a></button>
+
+        </form>
+      </div>
+
+    </div>
+
+  </nav>
+
+
+
+
+  <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/istockphoto-866987706-612x612.jpg" width="270px" height="650px" class="d-block w-100"
+            alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>WEDDING EVENT AT BANGALORE </h5>
+            <p>FOR MORE DETAILS VISIT OUR WEBSITE.</p>
+            <button type="button" class="btn btn-danger">Book Now</button>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/istockphoto-479977238-612x612.jpg" class="d-block w-100" width="270px" height="650px"
+            alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>SOCIAL EVENT AT PUNE</h5>
+            <p> Get Your Plan NOW.</p>
+            <button type="button" class="btn btn-danger">Book Now</button>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/994d777697a69d1847afcaf468863a66.jpg" width="270px" height="650px" class="d-block w-100"
+            alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>CORPORATE EVENT AT NAINITAL</h5>
+            <p> HURRY UP!!!! Don’t miss Exclusive Plan </p>
+            <button type="button" class="btn btn-danger">Book Now</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- card  -->
+  <hr width="100%" size="7%" />
+  <h1 style="font-family:cursive; color: rgb(75, 75, 231);text-align:center;font-family: 'Dancing Script', cursive;
+  font-family: 'Fruktur', cursive;font-family: 'Dancing Script', cursive;
+font-family: 'Fruktur', cursive;
+font-family: 'Marck Script', cursive;
+font-family: 'Parisienne', cursive;
+font-family: 'Playball', cursive;"> WE PLAN</h1>
+  <div style="overflow: hidden;">
+
+
+    <div class="container my-4">
+      <div class="col-md-7">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col-auto d-none d-lg-block">
+
+            <img class="bd-placeholder-img" width="50%"
+              style="width: 300px;height: 300px;margin-top: 15px; margin-bottom: 15px; margin-right: 25px;margin-left: 15px;; max-width: 400px;"
+              src="./assets/istockphoto-831050036-612x612.jpg ">
+          </div>
+
+
+          <div id="wedding" class="col p-2 d-flex flex-column position-static" style="width: 50%;">
+
+            <strong class="d-inline-block mb-1 text-primary">WEDDING EVENTS</strong>
+
+            <h3 class="mb-11" style="color: red;font-family: 'Dancing Script', cursive;
+            font-family: 'Fruktur', cursive;
+            font-family: 'Parisienne', cursive;"><strong>Book now to get 30% off </strong></h3>
+            <div class="mb-1 text-muted">NOV 11</div>
+            <p class="card-text mb-auto" style="font-family: 'Dancing Script', cursive;
+            font-family: 'Fruktur', cursive;
+            font-family: 'Parisienne', cursive;
+            font-family: 'Playball', cursive;font-size: 18px;">Find the most trusted Handpicked Wedding Planners to Plan All Your WEDDING
+              EVENTS. Forget all your WEDDING STRESS and Hire professional Planners to help with Your D-Day! More than
+              71,000 vendors. <br> <strong>ULTIMATE WEDDING SITE.</strong> <br> Past Events At <br>
+              Mumbai, Lucknow,Jabalpur,Hyderabad,Banaras</p>
+            <a href="#" class="stretched-link">REVIEWS ★★★★★</a>
+            <a href="./pages/wedding_event.html" class="stretched-link">Continue reading</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="container my-4" style="margin-left: 600px;">
+      <div class="col-md-7">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-2 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-1 text-primary">SOCIAL EVENTS</strong>
+            <h3 class="mb-11" style="color: red;font-family: 'Dancing Script', cursive;
+            font-family: 'Fruktur', cursive;
+            font-family: 'Parisienne', cursive;"><strong>Book now to get 25% off </strong></h3>
+            <div class="mb-1 text-muted">DEC 14</div>
+            <p class="card-text mb-auto" style="font-family: 'Dancing Script', cursive;
+            font-family: 'Fruktur', cursive;
+            font-family: 'Parisienne', cursive;
+            font-family: 'Playball', cursive;font-size: 18px;">Full-service event production, creative and everything
+              in-between—we’ve been doing it all for over 48 years. We ensure you and your guests
+              have a great time. We spend a lot of time planning and organizing
+              every detail, then executing those details with precision. The result
+              is that our events feel effortless.<br> Past Events At <br> Surat
+              ,Jaipur,Patna,Faridabad and many more places </p>
+            <a href="#" class="stretched-link">REVIEWS ★★★★★</a>
+            <a href="./pages/social_event.html" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="50%"
+              style="width: 300px;height: 300px;margin-top: 15px; margin-bottom: 15px; margin-right: 25px;margin-left: 15px;; max-width: 400px;"
+              src="./assets/istockphoto-479977238-612x612.jpg ">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container my-4">
+      <div class="col-md-7">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col-auto d-none d-lg-block">
+
+            <img class="bd-placeholder-img" width="50%"
+              style="width: 300px;height: 300px;margin-top: 15px; margin-bottom: 15px; margin-right: 25px;margin-left: 15px;; max-width: 400px;"
+              src="./assets/istockphoto-1161558644-612x612.jpg">
+          </div>
+
+
+          <div class="col p-2 d-flex flex-column position-static" width="100%">
+
+            <strong class="d-inline-block mb-1 text-primary">COPARATE EVENTS</strong>
+
+            <h3 class="mb-11" style="color: red;font-family: 'Dancing Script', cursive;
+            font-family: 'Fruktur', cursive;
+            font-family: 'Parisienne', cursive;"><strong>Book now to get 20% off </strong></h3>
+            <div class="mb-1 text-muted">JAN 1</div>
+            <p class="card-text mb-auto" style="font-family: 'Dancing Script', cursive;
+            font-family: 'Fruktur', cursive;
+            font-family: 'Parisienne', cursive;
+            font-family: 'Playball', cursive;font-size: 18px;">Our Corporate Events Unlimited team members are talented, enthusiastic
+              professionals with an unmatched attention to detail. Each member of
+              our staff will take the time to listen to you, collaborate with you,
+              and answer your questions. Working together, we’ll create an original
+              event, something your guests will remember for years to come.</strong> <br> Past Events At <br>
+              Gurgaon,Jabalpur,Kota,Udaipur</p>
+            <a href="#" class="stretched-link">REVIEWS ★★★★★</a>
+            <a href="./pages/corporate_event.html" class="stretched-link">Continue reading</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <hr width="100%" size="7%" />
+  <section>
+    <!-- Swiper -->
+    <h1 style="font-family:cursive; color: rgb(75, 75, 231);text-align:center;font-family: 'Dancing Script', cursive;
+    font-family: 'Fruktur', cursive;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Parisienne', cursive;
+    font-family: 'Playball', cursive;"> OUR GALLARY</h1>
+    <div class="swiper mySwiper" id="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8mNq3XwuNJQd_Z4UxcimwrIsamhKiR8luGA&usqp=CAU" />
+        </div>
+        <div class="swiper-slide">
+          <img src=" " />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR5hkem8osvUmk7Z5clCNWy1Qs3xB70iEjHg&usqp=CAU" />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOh7CdhCojFq5exwxl1oVAnPcB-Nhn_d9NtA&usqp=CAU" />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXV8uZpGaIY-r6e6W0FPmcxZnrcU5Qcmb0uQ&usqp=CAU" />
+        </div>
+        <div class="swiper-slide">
+          <img src="" />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzIQSlQc80JbrS66lnpW-d_c0zEKJrRFQE1g&usqp=CAU" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script >
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </section>
+  <br>
+  <hr width="100%" size="7%" />
+  <section>
+    <div>
+      <section>
+        <div class="team" id="teamsection">
+          <h2 style="font-family:cursive; color: rgb(75, 75, 231);text-align:center;font-family: 'Dancing Script', cursive;
+          font-family: 'Fruktur', cursive;
+          font-family: 'Marck Script', cursive;
+          font-family: 'Parisienne', cursive;
+          font-family: 'Playball', cursive;">OUR PLANNER</h2>
+          <div class="team-members">
+            <div class="member">
+              <img src="./assets/amle.png" width="208px" height="230px" alt="member-2">
+              <div class="about-member">
+                <h5>KUMAR SANSKAR</h5>
+                <p>Honor Attendants</p>
+                <p> Helping the bride pick the dress. Attending pre-wedding events like the rehearsal dinner.<br> <strong> 8 year experience</strong> <br> Studies at <strong> Ferris State University .</strong></p>
+                <div class="social">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="member">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfINzs9_0bUNSXui0fqvhPsalY-rsO9Q1pUA&usqp=CAUjpg"
+                alt="member-2">
+              <div class="about-member">
+                <h5>GOLDI MAURYA</h5>
+                <p>Matron of Honor</p>
+                <p> The Matron of honor will walk alone after other members of the bridal party. The Flower Girls and/or Ring Bearers<br> <strong> 9 year experience</strong> <br> Studid at <strong>Atlanta Technical College.</strong></p>
+                <div class="social">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="member">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfINzs9_0bUNSXui0fqvhPsalY-rsO9Q1pUA&usqp=CAU"
+                alt="member-2">
+              <div class="about-member">
+                <h5>MANSI KATIYAR</h5>
+                <p>Groomswomen Expert</p>
+                <p>Serve as a sounding board,Pick out attire ,Serve as a liaison before the ceremony.<br> <strong> 11 year experience</strong> <br> Studies at <strong>Iowa State University.</strong></p>
+                <div class="social">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="member">
+              <img src="./assets/amle.png" width="208px" height="230px" alt="member-2">
+            <div class="about-member">
+              <h5>SHUBH MISHRA</h5>
+              <p>Groomsmen Expert</p>
+              <p>Play wingman,Pick out attire ,Serve as a liaison before the ceremony.<br> <strong> 8 year experience</strong> <br> Studies at <strong>College of the Ozarks.</strong></p>
+              <div class="social">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+            </div>
+          </div>
+          <p><a href="#" id="learn" class="btn btn-large btn-danger">Learn More</a></p>
+        </div>
+      </section>
+    </div>
+  </section>
+  <hr width="100%" size="7%" />
+
+  
+  <section>
+    <div >
+      <div class="extra" id="feedimage" style="margin-left: 0px; width: 40%;float: left;">
+
+        <img src="https://wedding-manager.dexignzone.com/xhtml/images/pic2.png">
+
+      </div>
+      <div>
+      <div  style="margin-right: 130px; width: 36%;float: right;">
+        <h3 style="margin-top:60px;color: rgb(47, 69, 163);text-align: center;font-family: 'Dancing Script', cursive;
+        font-family: 'Fruktur', cursive;
+        font-family: 'Parisienne', cursive;
+        font-family: 'Playball', cursive;font-size: 35px; " id="feedback">GIVE FEEDBACK !!!!!!!!</h3>
+        <br>
+        <br>
+       
+       
+        <br>
+        <div class="container"  style="position: relative;
+       
+        background-color: #111;
+        padding: 20px 30px;
+        border: 1px solid #444;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;"
+        >
+            <div class="post">
+                <div class="text">Thanks for rating us !!</div>
+            </div>
+            <div class="star-widget">
+                <input type="radio"  name="rate" id="rate-5">
+                <label for="rate-5" class="fa fa-star"></i></label>
+                <input type="radio" name="rate" id="rate-4">
+                <label for="rate-5" class="fa fa-star"></i> </label>
+                <input type="radio" name="rate" id="rate-3">
+                <label for="rate-5" class="fa fa-star"></i></label>
+                <input type="radio" name="rate" id="rate-2">
+                <label for="rate-5" class="fa fa-star"></i></label>
+                <input type="radio" name="rate" id="rate-1">
+                <label for="rate-5" class="fa fa-star"></i></label>
+    
+                <form>
+                    <header > </header>
+                    <div class="textarea">
+                        <textarea col="30" placeholder="Descibe your experience.."></textarea>
+    
+                    </div>
+                    <div class="btn">
+                        <button type="submit">POST!!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+      </div>
+  </section>
+  
+
+  <hr width="100%" size="7%" />
+  <!-- services -->
+  <div class="container">
+    <div class="header">
+      <h1 style="align-items: center;text-align: center; justify-content: center;font-family: 'Dancing Script', cursive;
+font-family: 'Fruktur', cursive;
+font-family: 'Marck Script', cursive;
+font-family: 'Parisienne', cursive;
+font-family: 'Playball', cursive;" id="Services">Services</h1>
+    </div>
+    <div class="card-group">
+      <div class="card">
+        <img src="./assets/WhatsApp Image 2021-11-04 at 4.32.30 PM.jpeg" class="images" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Wedding ring and flowers</h5>
+          <p class="card-text">A wedding ring or wedding band is a finger ring that usually forged from metal
+            and traditionally is forged of gold or another precious metal. </p>
+          <span class="price">Rs. 7000 </span>
+          <span class="discount" style="text-decoration-line: line-through;color:gray"> Rs. 8000</span>
+          <span class="discount-percentage" style="color: rgb(146, 7, 7);">(12.5% OFF)</span>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/WhatsApp Image 2021-11-04 at 4.31.44 PM.jpeg" class="images" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Catering</h5>
+          <p class="card-text">This type of catering service is often responsible
+            for all aspects of the event planning.
+          </p>
+          <span class="price">Rs. 10000 </span>
+          <span class="discount" style="text-decoration-line: line-through;color:gray"> Rs. 12000</span>
+          <span class="discount-percentage" style="color: rgb(146, 7, 7);">(16.66% OFF)</span>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/WhatsApp Image 2021-11-04 at 4.32.09 PM.jpeg" class="images" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Venue</h5>
+          <p class="card-text">Planning the wedding venue is really the first step in planning a wedding
+            everything else hinges on the location </p>
+          <span class="price">Rs. 28000 </span>
+          <span class="discount" style="text-decoration-line: line-through;color:gray"> Rs. 30000</span>
+          <span class="discount-percentage" style="color: rgb(146, 7, 7);">(6.66% OFF)</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-group-two">
+      <div class="card">
+        <img src="./assets/WhatsApp Image 2021-11-04 at 4.31.58 PM.jpeg" class="images" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Music</h5>
+          <p class="card-text">Music is one of the most important thing in any event.Music streaming has grown up
+            tremendously. </p>
+          <span class="price">Rs. 700 </span>
+          <span class="discount" style="text-decoration-line: line-through;color:gray"> Rs. 1000</span>
+          <span class="discount-percentage" style="color: rgb(146, 7, 7);">(30% OFF)</span>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/WhatsApp Image 2021-11-04 at 4.31.35 PM.jpeg" class="images" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cakes</h5>
+          <p class="card-text">Our wide range of delectable cake varities might include
+            birthday cakes,anniversary cakes,party cakes and eggless cakes.
+          </p>
+          <span class="price">Rs. 800 </span>
+          <span class="discount" style="text-decoration-line: line-through;color:gray"> Rs. 1600</span>
+          <span class="discount-percentage" style="color: rgb(146, 7, 7);">(50% OFF)</span>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./assets/WhatsApp Image 2021-11-04 at 4.32.19 PM.jpeg" class="images" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Wedding accessories</h5>
+          <p class="card-text">Wedding are occasions to celebrate with full glamor and grandeur and our sole
+            purpose is to concoct essence of merriment to the divine celebrations of marriage.
+          </p>
+          <span class="price">Rs. 5000 </span>
+          <span class="discount" style="text-decoration-line: line-through;color:gray"> Rs. 6000</span>
+          <span class="discount-percentage" style="color: rgb(146, 7, 7);">(10% OFF)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- association -->
+   <section class="association">
+    <h1
+      style="
+        font-family: 'Charm', cursive;
+        font-size: 68px;
+        text-align: center;
+        padding-top: 40px;
+      "
+    >
+      Association
+    </h1>
+    <p style="text-align: center; color: rgb(116, 113, 113); margin-top: 1px">
+      GTS Events is proud to have associations with these organisations
+    </p>
+    <ul">
+      <li style="text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 58px;"><img src="./assets/association1.png" alt=""></li>
+      <li style="text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 58px;"><img src="./assets/association2.png" alt=""></li>
+      <li style="text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 58px;"><img src="./assets/association3.jpg" alt=""></li>
+      <li style="text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 58px;"><img src="./assets/association4.png" alt=""></>
+    </ul>
+  </section>
+
+  <hr width="100%" size="7%" />
+  <footer class="footer-section" style="background-image: linear-gradient(
+      to right top,
+      #dddbe2,
+      #cccccc,
+      #c5c7cc,
+      #c1bec2,
+      #c8cdcf
+    );" id="footer">
+    <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="cta-text">
+                <h4>Find us</h4>
+                <span> Main Center :- <br>
+                  1010 Avenue, sw 54321, chandigarh</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fa fa-phone-square"></i>
+              <div class="cta-text">
+                <h4>Call us</h4>
+                <span>+91 123456789</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <div class="cta-text">
+                <h4>Mail us</h4>
+                <span>mail@info.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 mb-50">
+            <div class="footer-widget">
+              <div class="footer-logo" style="color: rgb(18, 19, 17); font-size: 25px;font-family: 'Dancing Script', cursive;
+              font-family: 'Fruktur', cursive;
+              font-family: 'Marck Script', cursive;
+              font-family: 'Parisienne', cursive;
+              font-family: 'Playball', cursive; ">
+                <strong>ঔৣ°GTS°ঔৣ </strong>
+              </div>
+              <div class="footer-text">
+                <p style="color: rgb(47, 80, 100);font-size: larger; font-family: cursive;">Life is an event.<br> Make
+                  it memorable.<br>
+                  Make any occasion unforgettable <br>
+                  Our business is making memories<br>
+                  Remembered always<br>
+                  Exclusive events, priceless memories<br>
+                  Memorable events don’t just happen.<br> They happen to be our business..</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Useful Links</h3>
+              </div>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Expert Team</a></li>
+                <li><a href="#">Contact us</a></li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Subscribe</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <p>Don’t miss to subscribe to our new feeds.</p>
+              </div>
+              <div class="subscribe-form">
+                <form action="#">
+                  <input type="text" placeholder="Email Address">
+                  <button><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-area">
+      <section class="sec-3">
+        <ul style="margin-left: 0px;">
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-google"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+          </li>
+          
+        </ul>
+      </section>
+      <section class="sec-4" style="width: 100%;margin-left: 0px;">
+        <p>
+          Copyright © 2020 All Rights Reserved by
+          <a href="" style="font-family: 'Dancing Script', cursive;
+          font-family: 'Fruktur', cursive;
+          font-family: 'Marck Script', cursive;
+          font-family: 'Parisienne', cursive;
+          font-family: 'Playball', cursive;">ঔৣ°GTS°ঔৣ </a>
+        </p>
+      </section>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+    
+    <script>
+      const btn=document.querySelector("button");
+      const post=document.querySelector(".post");
+      const widget =document.querySelector(".star-widget");
+      btn.onclick =()=>{
+          widget.style.display="none";
+          post.style.display="block";
+      
+         
+      
+      btn.onclick =()=>{
+          widget.style.display="block";
+          post.style.display="none";
+      
+          
+      }
+      return false;
+  }
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
